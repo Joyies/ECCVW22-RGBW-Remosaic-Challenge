@@ -25,13 +25,13 @@ $ bash train.sh
 ```
 
 ## Validation:
-Downloading the pre-trained model[[google drive](https://drive.google.com/file/d/1hRAbhM7G8oJBYDxJtIpVmV5fjQ03uvYL/view?usp=sharing)] and putting it to experiments/*
+Downloading the pre-trained model[[google drive](https://drive.google.com/file/d/1hRAbhM7G8oJBYDxJtIpVmV5fjQ03uvYL/view?usp=sharing)] and putting it to experiments/
 ```
 $ bash val.sh
 ```
 
 ## Testing:
-Downloading the pre-trained model[[google drive](https://drive.google.com/file/d/1hRAbhM7G8oJBYDxJtIpVmV5fjQ03uvYL/view?usp=sharing)] and putting it to experiments/*
+Downloading the pre-trained model[[google drive](https://drive.google.com/file/d/1hRAbhM7G8oJBYDxJtIpVmV5fjQ03uvYL/view?usp=sharing)] and putting it to experiments/
 ```
 $ bash test.sh
 ```
