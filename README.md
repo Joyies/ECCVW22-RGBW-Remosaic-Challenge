@@ -1,7 +1,7 @@
 # ECCVW22-RGBW-Remosaic-Challenge
 The second place solution of the RGBW Joint Remosaic and Denoise @MIPI-challenge
 
-## 1. Modifying the config file in configs/stdrunet.yml
+## Modifying the config file in configs/stdrunet.yml
 - gt_folder_train: 'path/RGBW_train_dataset_fullres/GT_bayer/train_bayer_full_gt'
 - QB_0db_folder_train: 'path/RGBW_train_dataset_fullres/input/train_RGBW_full_input_0dB'
 - QB_24db_folder_train: 'path/RGBW_train_dataset_fullres/input/train_RGBW_full_input_24dB'
@@ -18,20 +18,23 @@ The second place solution of the RGBW Joint Remosaic and Denoise @MIPI-challenge
 - test_model_path: 'path/file/experiments/model_best.pt'
 - save_path: 'path/file/'** 
 
-## 2. Training:
+## Training:
 
 ```
 $ bash train.sh
 ```
 
-## 3. Validation:
+## Validation:
 
 ```
 $ bash val.sh
 ```
 
-## 4. Testing:
+## Testing:
 
 ```
 $ bash test.sh
 ```
+
+## Acknowledgement
+Code borrows from [SimpleIR(https://github.com/xindongzhang/SimpleIR)]. Thanks for sharing !
