@@ -1,0 +1,49 @@
+model: 'stdrunet'
+## parameters for ecbsr
+colors: 1
+pretrain: null
+div2k_pretrain: False
+
+## parameters for demosaic
+dmsc: 1
+cfa: 'GBRG'
+
+## parameters for model training
+patch_size: 128
+batch_size: 10
+data_repeat: 128
+data_augment: 1
+data_range: 1024 # 1 or 1024
+
+mapping_loss: False
+
+is_qat: 0
+epochs: 1000
+lr: 0.0001
+decays: [200,300]
+gamma: 0.5
+store_in_ram: 0
+log_every: 100
+test_every: 5
+log_path: "./experiments"
+log_name: 
+
+## hardware specification
+gpu_ids: [0]
+threads: 8
+
+gt_folder_train: 'path/RGBW_train_dataset_fullres/GT_bayer/train_bayer_full_gt'
+QB_0db_folder_train: 'path/RGBW_train_dataset_fullres/input/train_RGBW_full_input_0dB'
+QB_24db_folder_train: 'path/RGBW_train_dataset_fullres/input/train_RGBW_full_input_24dB'
+QB_42db_folder_train: 'path/RGBW_train_dataset_fullres/input/train_RGBW_full_input_42dB'
+
+QB_0db_folder_val: 'path/RGBW_validation_dataset_fullres/input/valid_RGBW_full_input_0dB'
+QB_24db_folder_val: 'path/RGBW_validation_dataset_fullres/input/valid_RGBW_full_input_24dB'
+QB_42db_folder_val: 'path/RGBW_validation_dataset_fullres/input/valid_RGBW_full_input_42dB'
+
+QB_0db_folder_test: 'path/RGBW_test_dataset_fullres/input/test_RGBW_full_input_0dB'
+QB_24db_folder_test: 'path/RGBW_test_dataset_fullres/input/test_RGBW_full_input_24dB'
+QB_42db_folder_test: 'path/RGBW_test_dataset_fullres/input/test_RGBW_full_input_42dB'
+
+test_model_path: 'path/file/experiments/model_best.pt'
+save_path: 'path/file/'
