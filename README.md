@@ -37,4 +37,4 @@ $ bash test.sh
 ```
 
 ## Acknowledgement
-Code borrows from [SimpleIR(https://github.com/xindongzhang/SimpleIR)]. Thanks for sharing !
+Code borrows from [SimpleIR](https://github.com/xindongzhang/SimpleIR). Thanks for sharing !
